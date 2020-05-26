@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+     <!--Neri Corral-->
+    <head> <!-- Se abre la etiqueta de head -->
+            <meta charset="utf-8"> <!-- Meta charset se utiliza para aseguraarnos que el navegador conocerá la
+                                    codificación de caracteres utilizada antes de que comience a procesar nada -->
+            <title>Nosotros</title> <!-- Se abre etiqueta para colocar el titulo de la página -->
+             <!-- Especifica el enlace a una de estilo externa -->
+            <link rel="stylesheet" type="text/css" href="css/styles.css" />
+            <link rel="stylesheet" type="text/css" href="css/tabla.css" />
+            <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet"> <!--Especifica la URL y un estilo -->
+    </head>
+
+    <body>
+            <header>
+                  <div class="contenedor">  <!-- Se abre la etiqueta de div con el atriburo de contenedor -->
+                        <img src="imagenes/logo.png"> <!-- Se coloca una imagen -->
+                        <h1 class="icon">VB</h1> <!-- Se agrega el icono de la página -->
+                        <input type="checkbox" id="menu-bar"> <!-- Se añade un checkbox -->
+                        <label class="fontawesome-align-justify" for="menu-bar"></label>
+                        <nav class="menu">
+                              <a href="inicio.html">Inicio</a>
+                              <a href="blog.html">Blog</a>
+                              <a href="test.html">Test de Holland</a>
+                              <a href="nosotros.html">Nosotros</a>
+                              <a href="cerrar.php">Cerrar sesión</a>
+                        </nav>
+                  </div>
+            </header>
+
+            <section id="banner"> 
+                  <img src="imagenes/1.png"> 
+                  <div class="contenedor"> 
+                        <h1>Nosotros</h1>
+                  </div>
+            </section>
+
+            <!-- Se abre section para colocar un cierto de vinculos con pequeñas descripciones -->
+            <section id="nosotros"> 
+                  <div class="contenedor"> 
+                        <center><h2>VB Orientación vocacional</h2></center></br> <!--titulo centrado-->
+
+                        <p>VB Orientación vocacional es una empresa creada en Abril del 2020 con el objetivo
+                           de crear un espacio donde los estudiantes pudieran ser orientados a su vocación 
+                           y así elegir su carrera universitaria ideal. 
+                        </p></br>
+            
+                        <img src="imagenes/mision.png" align="left"> <!-- Se inserto una imagen -->
+                        <h2> Misión</h2></br> <!-- Se coloco un subtítulo -->
+                        <p>Ofrecer un servicio de atención psicológica para la orientación vocacional
+                           mediante blogs, información y encuestas dirigida a los estudiantes.
+                        </p></br> 
+            
+                        <img src="imagenes/vision.png" align="left"> <!-- Se inserto una imagen -->
+                        <h2>Visión</h2></br> <!-- Se coloco un subtítulo -->
+                        <p>Ser una página confiable y atractiva para el público estudiantil.</p></br>
+
+                        <img src="imagenes/valores.png" align="left"> <!-- Se inserto una imagen -->
+                        <h2>Valores</h2></br> <!-- Se coloco un subtítulo -->
+                        <p>Respeto, trabajo en equipo, responsabilidad, deseo de superación y compromiso.</p>
+                  </div>
+            </section>
+
+            <!--Daniela Robledo-->
+            <section id="autores"> <!--Sección para la tabla, autores-->
+                  <div class="contenedor"> <!--contenedor-->
+                        <img src="imagenes/autores.png" align="left"> <!--icono de autores ubicado a la izquierda del título-->
+                        <h2>Autores</h2> <!--Título-->
+                        <table style="width: 100%"> <!--Se crea la tabla-->
+
+                              <tr>
+                                    <!--Encabezados de la tabla-->
+                                    <th>
+                                          Nombre 
+                                    </th>
+            
+                                    <th>
+                                          Apellido
+                                    </th>
+            
+                                    <th>
+                                          Contacto
+                                    </th>
+                              </tr>
+                            
+                              <!--Datos de los autores-->
+                              <tr>
+                                    <td>Neri</td>
+                                    <td>Corral</td>
+                                    <td>corralnerivg1@gmail.com</td>
+                              </tr>
+            
+                              <tr>
+                                    <td>Mariel</td>
+                                    <td>López</td>
+                                    <td>mariel8lg@gmail.com</td>
+                              </tr>
+            
+                              <tr>
+                                    <td>Lissie</td>
+                                    <td>Morales</td>
+                                    <td>morales.lissie.cbtis37@gmail.com</td>
+                              </tr>
+            
+                              <tr>
+                                    <td>Ricardo</td>
+                                    <td>Morales</td>
+                                    <td>morales.ricardo.cbtis37@gmail.com</td>
+                              </tr>
+            
+                              <tr>
+                                    <td>Alejandra</td>
+                                    <td>Olais</td>
+                                    <td>olais.alejandra.cbtis37@gmail.com</td>
+                              </tr>
+            
+                              <tr>
+                                    <td>Daniela</td>
+                                    <td>Robledo</td>
+                                    <td>robledo.daniela.cbtis37@gmail.com</td>
+                              </tr>
+                        </table> <!--Fin de la tabla-->
+                  </div> <!--Fin del contenedor-->
+            </section> <!--Fin de la sección-->
+
+
+            <!--Mariel López-->            
+            <section id="info"> <!--sección info, para la encuesta-->
+                  <h2>Evaluación de página</h2>
+                  <div class="contenedor"> <!--contenedor, se escribe las preguntas y las respuestas con un input tipo radio-->
+                        <form>
+                              <div>
+                                    ¿Te pareció interesante nuestro blog?<input type="radio" name="p1" value="0"> Si <input type="radio" name="p1" value="1"> No
+                              </div>
+                              <div>
+                                    ¿Te sirvió el test de Holland?<input type="radio" name="p2" value="0"> Si <input type="radio" name="p2" value="1"> No
+                              </div>
+                              <div>
+                                    ¿Recomendarías la página<input type="radio" name="p3" value="0"> Si <input type="radio" name="p3" value="1"> No
+                              </div>
+                              <div id="error"></div>
+                              </div>
+                              <div>
+                                    <p><input type="submit" value="Enviar"></p>
+                              </div>
+                        </form>
+
+                        <div class="contenedor"> <!--contenedor para mostrar el resultado abajo de las preguntas-->
+                              <div id="resultado"></div> <!--se muestra el resultado-->
+                        </div>
+
+                        <!--se abre javascript-->
+   
+                        <script>
+                              // se crea el evento click del boton
+                              document.querySelector("input[type=submit]").addEventListener("click",enviar);
+   
+                              // se define el array que contendra los respuestados de la encuesta
+                              var resultadoEncuesta=[];
+   
+                              // se define la variable que contiene el numero de preguntas, en este caso son solo 3
+                              var totalPreguntas=3;
+   
+                              // inicializamos el array de los resultados de la forma:
+                              // resultadoEncuesta["p1"]=[0,0]
+                              // resultadoEncuesta["p2"]=[0,0]
+                              // ...
+                              inicializarArrayResultados();
+   
+                              // variable que contiene el numero de encuestas realizadas
+                              var totalEncuestas=0;
+   
+                              /**
+                                    * Funcion que se ejecuta cada vez que se pulsa sobre el boton "enviar"
+                              */
+                              function enviar(e) {
+   
+                                    // se obtienen todos los radio seleccionados
+                                    var preguntas=document.querySelectorAll("input[type=radio]:checked");
+   
+                                    // si estan todos seleccionados, entonces...
+                                    if(preguntas.length==totalPreguntas) {
+                                          totalEncuestas++;
+                                          document.getElementById("error").innerHTML="";
+   
+                                          // se recorre cada una de las respuestas
+                                          preguntas.forEach(function(pregunta) {
+   
+                                          // se guarda en un array bidimensional la respuesta
+                                          resultadoEncuesta[pregunta.name][pregunta.value]++;
+   
+                                          // desmarcamos el check
+                                          pregunta.checked=false;
+                                          });
+                                          mostrarResultado();
+                                    }else{
+                                          document.getElementById("error").innerHTML="Selecciona todos los valores...";
+                                    }
+   
+                                    // se cancela el evento para que no continue
+                                    e.preventDefault();
+                              }
+   
+                              /**
+                                    * Funcion para inidializar el array bidimensional
+                              */
+                              function inicializarArrayResultados() {
+                                    for(var i=1;i<=totalPreguntas;i++) {
+                                          resultadoEncuesta["p"+i]=[0,0];
+                                    }
+                              }
+   
+                              /**
+                                    * Simple funcion que muestra los resultados en cada votacion
+                              */
+                              function mostrarResultado() {
+                                    resultado="";
+                                    resultado+="</br><h3>De un total de "+totalEncuestas+" encuestados...</h3>";
+                                    for(var i=1;i<=totalPreguntas;i++) {
+                                          resultado+="<div>pregunta "+i+" - Si: "+resultadoEncuesta["p"+i][0]+" No: "+resultadoEncuesta["p"+i][1]+"</div>";
+                                    }
+                                    document.getElementById("resultado").innerHTML=resultado;
+                              }
+                        </script> <!--cierra javascript-->
+                  </div>
+            </section>
+      </body>
+
+      <footer> 
+            <div class="contenedor"> <!-- Clase contenedor para el pie de página-->
+                <p class="copy">VB &copy; 2020 </p> <!-- Muestra la empresa como marca registrada-->
+                <p>CBTIS 37 4AVP-Equipo 6</p> <!-- Autores de la página-->
+                <div class="sociales"> <!--Clase para las redes cociales de la empresa, con anclaje a cada red-->
+                    <a class="fontawesome-facebook-sign" href="https://www.facebook.com/VB-Orientaci%C3%B3n-vocacional-110041484045404/" target="_blank"></a>
+                    <a class="fontawesome-twitter" href="https://twitter.com/vborientacionv1" target="_blank"></a>
+                    <a class="fontawesome-camera-retro" href="https://www.instagram.com/vb_orientacionv1/" target="_blank"></a>
+                </div>
+            </div>
+      </footer>
+</html>
